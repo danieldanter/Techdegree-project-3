@@ -19,36 +19,55 @@
             
                
             <div id="headline">
-                    <h2>Signup for our newsletter</h2>
-                    <p>Get the latest news on how your code is doing in your inbox</p>
-                    
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing in your inbox</p>
+                 
             </div>
+
             
             
             <form>
-                <fieldset>
-                    <legend> Contact Information</legend>
-                    <label for="name"> Full Name</label>
-                    <input type="text" id= "name" name ="user-name" placeholder="Required ">
-                    <label for="email">Email Address</label>
-                    <input type="email" id = "email" name="user-email" placeholder="Required ">
-                    <label for="phone">Phone number</label>
-                    <input type="tel" id="phone" name="user-phone">
-                    <label for="address1">Street Adress</label>
-                    <input type="text" id ="address1" name ="user-address1">
-                    <label for="city">City</label>
-                    <input type="text" id="city" name = "user-city">
+                <fieldset id="field">
 
-                    <label for="state">State</label>
-                    <select name="user_stage" id="state">
+                    
                         
-                        <option value="android_developer">Choose State</option>
-                        <option value="ios_developer">IOs Developer</option>
-                        <option value="MObile designer">Mobile Designer</option>
-                    </select>
+                        <legend id="contact"> Contact Information</legend>
 
-                    <label for="zip">Zip Code</label>
-                    <input type="text" id="zip" name="user-zip">                   
+                        <div class="row">
+                            <label for="name"> Full Name</label>                       
+                            <input type="text" id= "name" name ="user-name" placeholder="Required ">
+                        </div>
+                        <div class="row">
+                            <label for="email">Email Address</label>
+                            <input type="email" id = "email" name="user-email" placeholder="Required ">
+                        </div>
+                        <div class="row">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" name="user-phone">
+                        </div>
+                        <div class="row">
+                            <label for="address1">Street Adress</label>
+                            <input type="text" id ="address1" name ="user-address1">
+                        </div>
+                        <div class="row">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name = "user-city">
+                        </div>
+                        <div class="row">
+                            <label for="state">State</label>
+                            <select name="user_stage" id="state">
+                        
+                            
+                                <option value="android_developer">Choose State</option>
+                                <option value="ios_developer">IOs Developer</option>
+                                <option value="MObile designer">Mobile Designer</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="user-zip">
+                        </div>  
+                                    
                 </fieldset>
 
                 <fieldset>
@@ -59,9 +78,6 @@
                         <input type="checkbox" id="html_news" value="interst_html" name="user_interest">
                         <label for="html_news" >HTML News</label>
                     </div>
-
-                    
-
                     <div class="inline-field">
                         <input type="checkbox" id="css-news" value="interst_css" name="user_interest">
                         <label for="css-news">CSS News</label>
@@ -72,14 +88,22 @@
                         <label for="avascript_news" >Javascript News</label>
                     </div>
                     
-                    <label class="inline-field">Newsletter format</label>
-                    <input type="radio" id="html-format" value="html" name="user_format"><label for="html-format" class="light">HTML</label>
-                    <br>
-                    <input type="radio" id="text-format" value="plain_text" name="user_format"><label for="text-format" class="light">Plain text</label>
-                   
-                    <label for="topics">Other topics you'd like to hear about</label>
-                    <textarea name="user_topics" id="topics" ></textarea>
-                    
+                    <div id="nwesletter-format">
+                        <label>Newsletter format</label>
+                        <div class="html-field">
+                            <input type="radio" id="html-format" value="html" name="user_format">
+                            <label for="html-format" class="light">HTML</label>
+                        </div>
+                        <div class="html-field">
+                            <input type="radio" id="text-format" value="plain_text" name="user_format">
+                            <label for="text-format" class="light">Plain text</label>
+                        </div>
+                    </div>
+
+                    <div class="topics-field">
+                        <label for="topics">Other topics you'd like to hear about</label>
+                        <textarea name="user_topics" id="topics" ></textarea>
+                    </div>
 
 
                 </fieldset>
